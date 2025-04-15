@@ -1,6 +1,6 @@
 ## Chapter 1: Python Basics
 
-### 1.2 - Basic Terminology and Using IDLE
+### Basic Terminology and Using IDLE
 
 Run Python IDLE or other IDEs you are used to and enter expressions in examples in interactive shell.
 
@@ -44,7 +44,7 @@ Variable names:
 - It can't begin with a number
 - Python convention to start your variables with a lowercase letter
 
-### 1.3 - Writing Our First Program
+### Writing Our First Program
 
 - Create a file named `Hello.py` containing the following code:
 
