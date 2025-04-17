@@ -1,6 +1,6 @@
 ## Chapter 2: Flow Control
 
-#### Booleans
+### Booleans
 
 - Booleans have two values: `True` and `False` (Boolean is capitalized because the data type is named after mathematician George Boole.).
 
@@ -59,4 +59,65 @@
 
   ```python
    2 + 2 == 4 and not 2 + 2 == 5 and 2 * 2 == 2 + 2   # True
+  ```
+
+### Elements of flow control
+
+- start with a part called the condition, and all are followed by a block of code called the clause.
+
+#### Conditions
+
+- always evaluate to True or False and flow control decides what to do based on this
+
+#### Blocks of code
+
+ 1. Blocks begin when the indentation increases.
+ 2. Blocks can contain other blocks.
+ 3. Blocks end when the indentation decreases to zero or to a containing block’s indentation
+
+### Flow control statements
+
+#### if statement
+
+- The if statement’s clause (that is, the block following the if statement) will execute if the statement’s condition is True. The clause is skipped if the condition is False.
+
+  ```python
+  if name == 'Alice':
+      print('Hi, Alice.')
+  ```
+
+#### else statement
+
+- The else clause is executed only when the if statement’s condition is False.
+
+  ```python
+  if name == 'Alice':
+      print('Hi, Alice.')
+  else:
+    print('Hello, Stranger.')
+  ```
+
+#### elif statement
+
+- The elif statement is an “else if” statement that always follows an if or another elif statement.
+
+  ```python
+  if name == 'Alice':
+      print('Hi, Alice.')
+  elif age < 12:
+    print('You are not Alice, kiddo.')
+  elif age > 100:
+    print('You are not Alice, grannie.')
+  ```
+
+#### while loop statement
+
+- You can make a block of code execute over and over again with a while statement.
+- The code in a while clause will be executed as long as the while statement’s condition is True.
+
+  ```python
+  spam = 0
+  if spam < 5:
+    print('Hello, world')
+    spam = spam + 1
   ```
