@@ -48,8 +48,7 @@
   spam        # ['cat', 'dog', 'fish', 'elephant']
   ```
 
-- you can leave out one or both of the indexes on either side
-of the colon in the slice
+- you can leave out one or both of the indexes on either side of the colon in the slice:
 
    ```python
    spam = ['cat', 'bat', 'rat']
