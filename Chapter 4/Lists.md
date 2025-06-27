@@ -24,11 +24,8 @@
 
   ```python
   spam[0][-1]       # 'rat'
-
   # An item's value can be reassigned by accessing the index:
-
   spam[0] = 'mouse'
-
   spam              # ['mouse', 'elephant']
   ```
 
@@ -38,13 +35,9 @@
 
   ```python
   spam = ['cat', 'bat', 'rat', 'elephant']
-
   spam[0:2]   # ['cat', 'bat']
-
   # You can redefine multiple items in a list by using a slice:
-
   spam[1:3] = ['dog', 'fish']
-
   spam        # ['cat', 'dog', 'fish', 'elephant']
   ```
 
@@ -59,15 +52,21 @@
 
   ```python
   spam = ['cat', 'bat', 'rat']
-
   len(spam)   # 3
+  ```
+
+- Changing values in a list with indexes
+
+  ```python
+  spam = ['cat', 'bat', 'rat']
+  spam[1] = 'aardvark'
+  spam   # ['cat', 'aardvark', 'rat']
   ```
 
 - To **concatenate** lists, use the `+` or `*` operators:
 
   ```python
   [1, 2, 3] + [4, 5, 6]   # [1, 2, 3, 4, 5, 6]
-
   [1, 2, 3] * 3           # [1, 2, 3, 1, 2, 3, 1, 2, 3]
   ```
 
@@ -75,8 +74,41 @@
 
   ```python
   spam = ['cat', 'bat', 'rat', 'elephant']
-
   del spam[2]
-
   spam    # ['cat', 'bat', 'elephant'']
+  ```
+
+#### Using for loops with lists
+
+- A list can be iterated over in a for loop in the same manner as a `range` object:
+
+  ```python
+  # Both loops produce the same output:
+  for i in range(4):
+      print(i)
+  for i in [0, 1, 2, 3]:
+      print(i)
+  ```
+
+- common Python technique is to use range(list(somelist)) with a for loop to iterate ver the indexes of a list:
+
+  ```python
+  supplies = ['pens', 'staplers', 'flame-throwers', 'binders']
+  for i in range(len(supplies)):
+    print('Index ' + str(i) + ' in supplies is: ' + supplies[i])
+  
+  # Index 0 in supplies is: pens
+  ```
+
+#### The in and not in operators
+
+- you can determine whether a value is or is not in a list with the in and not in operators
+
+  ```python
+  'howdy' in ['hello', 'hi','howdy','heyas']
+  True
+  'cat' in spam
+  False
+  'cat' not in spam
+  True
   ```
