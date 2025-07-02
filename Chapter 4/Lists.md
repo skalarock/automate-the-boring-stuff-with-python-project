@@ -112,3 +112,75 @@
   'cat' not in spam
   True
   ```
+
+#### Multiple assignment
+
+- it is a shortcut that lets you assign multiple variables with the values in a list in one line of code
+
+  ```python
+  cat = ['fat','black','loud']
+  size = cat[0]
+  color = cat[1]
+  disposition = cat[2]
+  size, color, disposition = cat
+  ```
+
+### List Methods
+
+- The `index()` method returns the index of the first occurrence of the specified value:
+
+  ```python
+  spam = ['hello', 'hi', 'howdy', 'heyas']
+  spam.index('hello')    # 0
+  spam.index('howdy howdy howdy')   # (Raises an exception if value not found)
+  ```
+
+- The `append()` method appends an item to the end of the list:
+
+  ```python
+  spam = ['cat', 'dog', 'bat']
+  spam.append('moose')
+  spam   # ['cat', 'dog', 'bat', 'mooose']
+  ```
+
+- The `insert()` method inserts the specified value at the specified position:
+
+  ```python
+  spam = ['cat', 'dog', 'bat']
+  spam.insert(1, 'chicken')
+  spam    # ['cat', 'chicken', 'dog', 'bat']
+  ```
+
+- The `remove()` method removes the first occurrence of the item with the specified value:
+
+  ```python
+  spam = ['cat', 'bat', 'elephant', 'rat']
+  spam.remove('bat')
+  spam                  # ['cat', 'elephant', 'rat']
+  spam.remove('chicken')    # (Throws an error)
+  ```
+
+- The `sort()` method sorts a list in ascending order by default. The sorting direction can be reversed by using the `reverse` keyword argument:
+
+  ```python
+  spam = [2, 5, 3.14, 1, -7]
+  spam.sort()
+  spam    # [-7, 1, 2, 3.14, 5]
+  spam = ['ants', 'badgers', 'dogs']
+  spam.sort()
+  spam    # ['ants', 'badgers', 'cats']
+  spam.sort(reverse=True)
+  spam    # ['cats', 'badgers', 'ants']
+  ```
+
+  - **NOTE:** You cannot sort an array that contains both number and string types.
+  - **ALSO:** When working with strings, `sort()` actually sorts by "**ASCII-betical**" order rather than alphabetical order (resulting in uppercase letters being sorted before lowercase letters, because uppercase letters appears before lowercase letters in ASCII code). However, you can sort by true alphabetical order by using the `key` keyword argument:
+
+    ```python
+    spam = ['a', 'z', 'A', 'Z']
+    spam.sort()
+    spam    # ['A', 'Z', 'a', 'z']
+    # str.lower is a string method that converts a string input to lowercase:
+    spam.sort(key=str.lower)
+    spam    # ['A', 'a', 'Z', 'z']
+    ```
