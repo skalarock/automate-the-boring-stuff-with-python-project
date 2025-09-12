@@ -13,3 +13,4 @@ This repository contains my notes and project solutions for [Automate the Boring
 * Chapter 3 - Functions
 * Chapter 4 - Lists
 * Chapter 5 - Dictionaries and structuring data
+* Chapter 6 - Manipulating strings

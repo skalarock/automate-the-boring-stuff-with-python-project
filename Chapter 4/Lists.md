@@ -90,7 +90,7 @@
       print(i)
   ```
 
-- common Python technique is to use range(list(somelist)) with a for loop to iterate ver the indexes of a list:
+- common Python technique is to use `range(list(somelist))` with a for loop to iterate ver the indexes of a list:
 
   ```python
   supplies = ['pens', 'staplers', 'flame-throwers', 'binders']

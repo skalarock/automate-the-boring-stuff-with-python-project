@@ -23,7 +23,7 @@
 
 #### keys(), values(), items()
 
-- There are three dictionary methods that will return list-like values of the dictionary’s keys, values, or both keys and values: keys(), values(), and items()
+- There are three dictionary methods that will return list-like values of the dictionary’s keys, values, or both keys and values: `keys()`, `values()`, and `items()`
 
   ```python
   myCat = {'size': 'fat', 'color' : 'gray', 'disposition' : 'loud'}
@@ -51,7 +51,7 @@
   # Prints 'name: Zophie', 'species: cat', and 'age: 8'
   ```
 
-- Dictionaries have a get() method that takes two arguments: the key of the value to retrieve and a fallback value to return if that key does not exist
+- Dictionaries have a `get()` method that takes two arguments: the key of the value to retrieve and a fallback value to return if that key does not exist
 
   ```python
   picnicItems = {'apples': 5, 'cups': 2}
@@ -72,7 +72,7 @@
 
 #### Pretty printing
 
-- If you import the pprint module into your programs, you will have access to the pprint() and pformat()
+- If you import the pprint module into your programs, you will have access to the `pprint()` and `pformat()`
 
   ```python
   import pprint
@@ -85,7 +85,7 @@
   pprint.pprint(count)
   ```
 
-- If you want to obtain the prettified text as a string value instead of displaying it on the screen, call pprint.pformat() instead
+- If you want to obtain the prettified text as a string value instead of displaying it on the screen, call `pprint.pformat()` instead
 
 ### Using data structures
 
