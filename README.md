@@ -14,3 +14,4 @@ This repository contains my notes and project solutions for [Automate the Boring
 * Chapter 4 - Lists
 * Chapter 5 - Dictionaries and structuring data
 * Chapter 6 - Manipulating strings
+* Chapter 7 - Pattern matching with regular expressions
